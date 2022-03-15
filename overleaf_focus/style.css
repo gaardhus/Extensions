@@ -1,0 +1,38 @@
+/* Standard view darkmode and*/
+
+#editor, #editor-rich-text{
+    max-width:750px;
+    margin:auto;
+    /* background:#1e2530; */
+}
+
+.ace_content {
+    /* color:#d9d9d9 */
+}
+
+.editor-container {
+    /* background:#1e2530; */
+}
+
+/* .pdf-viewer {
+    background:#1e2530
+} */
+
+/* Fullscreen functionality */
+
+/* CSS layout */
+
+.ace-editor-wrapper {
+    max-width:750px;
+    margin:auto;
+}
+
+.ace_scrollbar, .ace_scrollbar-v {
+    display:none;
+}
+
+/* Gutter */
+.ace_gutter, .ace_gutter-active-line, .ace_gutter-cell, .ace-tm  {
+    /* background:#1e2530 !important;
+    color:#1e2530 */
+}
