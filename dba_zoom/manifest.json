@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "DBAZoom",
-    "version": "0.2",
+    "version": "0.3",
     "description": "Adds magnifying glass to DBA pictures",
     
     "icons" : {
