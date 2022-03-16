@@ -23,7 +23,7 @@ for (var i = 0; i < lis.length; i++) {
     console.log(lis[i]);
     
     lis[i].children[0].addEventListener ("mouseover", function(event) {
-        img.src = event.target.style.backgroundImage.slice(5,-2).replace("s-l140", "s-l1600")
+        img.src = event.target.style.backgroundImage.slice(5,-2).replace("S140X140", "S1600X1600")
     })
 }
 
