@@ -129,7 +129,7 @@ function fullscreen(e) {
 	// Enter fullscreen
 	if (platform_key && e.key === 'ArrowUp') {
 		// call your function to do the thing
-		editor = document.querySelector("#editor")
+		editor = document.getElementById("editor")
 		requestFullscreen(editor)
 	}
 
@@ -150,4 +150,4 @@ editorTheme.addEventListener("change", updateStyle, true)
 updateStyle()
 
 // Add eventlistener for fullscreen
-document.addEventListener('keyup', fullscreen, false)
+document.addEventListener('keydown', fullscreen, false)
