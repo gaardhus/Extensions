@@ -124,18 +124,18 @@ function fullscreen(e) {
 
 	} else {
 		var platform_key = e.ctrlKey
+	}
 
-		// Enter fullscreen
-		if (platform_key && e.key === 'ArrowUp') {
-			// call your function to do the thing
-			editor = document.querySelector("#editor")
-			requestFullscreen(editor)
-		}
+	// Enter fullscreen
+	if (platform_key && e.key === 'ArrowUp') {
+		// call your function to do the thing
+		editor = document.querySelector("#editor")
+		requestFullscreen(editor)
+	}
 
-		// Exit fullscreen
-		else if (platform_key && e.key === 'ArrowDown') {
-			cancelFullscreen()
-		}
+	// Exit fullscreen
+	else if (platform_key && e.key === 'ArrowDown') {
+		cancelFullscreen()
 	}
 }
 
