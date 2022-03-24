@@ -116,7 +116,7 @@ function cancelFullscreen() {
 
 // define fullscreen handler
 function fullscreen(e) {
-
+	e.preventDefault();
 	var OS = getOS()
 
 	if (OS == "Mac") {
