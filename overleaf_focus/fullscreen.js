@@ -301,6 +301,8 @@ editorTheme.addEventListener("change", updateStyle, true)
 updateStyle()
 
 // Add eventlistener for fullscreen
+var OS = getOS()
+
 if (OS == "Mac") {
 	document.addEventListener('keydown', fullscreen, false)
 
