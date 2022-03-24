@@ -22,7 +22,7 @@
 
 /* CSS layout */
 
-.ace-editor-wrapper {
+.ace-editor-wrapper, .cm-editor-wrapper.rich-text{
     max-width:750px;
     margin:auto;
 }
