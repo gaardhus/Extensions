@@ -20,9 +20,6 @@ function createCSS() {
 function updateStyle() {
 	console.log('updating style')
 
-	if (document.getElementsByName("editorTheme")[0].value === "textmate") {
-
-	}
 	setTimeout(() => {
 		editorBody = document.querySelector(".ace_editor")
 
@@ -162,3 +159,7 @@ if (OS == "Mac") {
 } else {
 	document.addEventListener('keyup', fullscreen, false)
 }
+
+// Update style on editor change
+var styleSwitch = document.getElementById('toggle-switch-false-37')
+styleSwitch.onclick = updateStyle
