@@ -163,3 +163,30 @@ if (OS == "Mac") {
 // Update style on editor change
 var styleSwitch = document.getElementById('toggle-switch-false-37')
 styleSwitch.onclick = updateStyle
+
+// Add button
+
+fs = document.querySelector('.toolbar-editor > div:nth-child(3)')
+
+new_fs = fs.cloneNode(true)
+
+new_fs.children[0].children[0].remove()
+new_fs.children[0].removeAttribute('href')
+
+document.querySelector('.toolbar-editor').appendChild(new_fs)
+
+new_fs.children[0].textContent = "⛶"
+new_fs.children[0].style.fontSize="20px"
+new_fs.style.marginLeft = "4px"
+new_fs.style.cursor = "pointer"
+
+function editorFullscreen(){
+	if (document.getElementById("editor")) {
+		editor = document.getElementById("editor")
+	} else if (document.getElementById("editor-rich-text")) {
+		editor = document.getElementById("editor-rich-text")
+	}
+	requestFullscreen(editor)
+}
+
+new_fs.onclick = editorFullscreen
