@@ -172,11 +172,15 @@ new_fs = fs.cloneNode(true)
 
 new_fs.children[0].children[0].remove()
 new_fs.children[0].removeAttribute('href')
+new_fs.children[1].children[0].remove()
+new_fs.children[1].removeAttribute('href')
 
 document.querySelector('.toolbar-editor').appendChild(new_fs)
 
 new_fs.children[0].textContent = "⛶"
 new_fs.children[0].style.fontSize="20px"
+new_fs.children[1].textContent = "⛶"
+new_fs.children[1].style.fontSize="20px"
 new_fs.style.marginLeft = "4px"
 new_fs.style.cursor = "pointer"
 
