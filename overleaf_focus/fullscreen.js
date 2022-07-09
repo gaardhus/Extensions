@@ -194,3 +194,25 @@ function editorFullscreen(){
 }
 
 new_fs.onclick = editorFullscreen
+
+// Dropdown tooltip
+
+function htmlToElement(html) {
+    var template = document.createElement('template');
+    html = html.trim(); // Never return a text node of whitespace as the result
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
+
+let fs_div = document.querySelector('div.toolbar-right:nth-child(5)');
+let fs_tooltip = htmlToElement('<div id="focusleaf-toggle" role="tooltip" class="fade in tooltip bottom" style="top: 68px; position: fixed;"><div class="tooltip-arrow" style="left: 50%;"></div><div class="tooltip-inner">Focusleaf Full screen</div></div>');
+
+function add_tooltip() {
+  String(parseInt(fs_tooltip.style.left.slice(0,-2)) + 24) + "px";
+  let rect = fs_div.getBoundingClientRect();
+  fs_tooltip.style.left = String(rect.left-59.2666015625) + "px";
+  fs_div.appendChild(fs_tooltip);
+}
+
+fs_div.onmouseover = add_tooltip;
+fs_div.onmouseout = function(){document.getElementById('focusleaf-toggle').remove();};

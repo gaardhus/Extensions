@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "Focusleaf",
-    "version": "2.2.0",
+    "version": "2.2.3",
     "description": "Adds focusing layout and functionality to Overleaf projects",
 
     "permissions": [
